@@ -1,217 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MulaPrime - Africa Digital Earning Platform</title>
+<title>Mulaprime - Earn Money Online</title>
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="Mulaprime helps you earn money online through simple tasks, referrals, videos, and digital opportunities.">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+<meta name="keywords" content="Mulaprime, earn money online, Africa online jobs, Uganda side hustle, Kenya online earning, Nigeria online income">
 
-  <!-- Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-  />
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Mulaprime - Earn Money Online">
+
+<meta property="og:description" content="Start earning online with Mulaprime today.">
+
+<meta property="og:image" content="https://mulaprime.space/mulaprime-thumbnail.jpg">
+
+<meta property="og:url" content="https://mulaprime.space">
+
+<meta property="og:type" content="website">
+
+<link rel="canonical" href="https://mulaprime.space">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<style>
+
+:root{
+  --green:#22c55e;
+  --dark:#0f172a;
+  --light:#f8fafc;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  background:var(--light);
+  color:#111;
+}
+
+/* NAVBAR */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:900;
+}
+
+.logo span{
+  color:var(--green);
+}
+
+nav a{
+  text-decoration:none;
+  margin-left:20px;
+  color:#111;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:var(--green);
+}
+
+/* HERO */
+
+.hero{
+  background:linear-gradient(135deg,#0f172a,#14532d);
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+
+.hero h1{
+  font-size:55px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 35px;
+  background:var(--green);
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  background:#16a34a;
+}
+
+/* TICKER */
+
+.ticker{
+  background:#111827;
+  color:white;
+  overflow:hidden;
+  padding:12px;
+}
+
+.ticker span{
+  display:inline-block;
+  white-space:nowrap;
+  animation:move 18s linear infinite;
+}
+
+@keyframes move{
+  from{transform:translateX(100%);}
+  to{transform:translateX(-100%);}
+}
+
+/* SECTIONS */
+
+.section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card img{
+  width:100%;
+  border-radius:12px;
+}
+
+/* DARK SECTION */
+
+.dark{
+  background:#0f172a;
+  color:white;
+}
+
+/* WHATSAPP */
+
+.whatsapp-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 20px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+
+footer{
+  background:#020617;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+footer a{
+  color:#22c55e;
+  text-decoration:none;
+}
+
+@media(max-width:768px){
+
+nav{
+  flex-direction:column;
+}
+
+.hero h1{
+  font-size:38px;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- SIDEBAR -->
-  <div class="sidebar">
+<!-- NAVBAR -->
 
-    <div class="logo">
-      Mula<span>Prime</span>
-    </div>
+<nav>
+  <div class="logo">Mula<span>prime</span></div>
 
-    <div class="sidebar-menu">
-
-      <a href="#" class="active">
-        <span><i class="fa-solid fa-house"></i> Dashboard</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-solid fa-chart-line"></i> Forex Lessons</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-solid fa-plane"></i> Aviator</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-solid fa-comments-dollar"></i> WhatsApp Earn</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-brands fa-tiktok"></i> TikTok Earn</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-brands fa-youtube"></i> YouTube Earn</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-solid fa-film"></i> Movies</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-solid fa-book"></i> Articles</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-solid fa-gift"></i> Free Shop</span>
-        <span>›</span>
-      </a>
-
-      <a href="#">
-        <span><i class="fa-solid fa-user"></i> Profile</span>
-        <span>›</span>
-      </a>
-
-    </div>
-
+  <div>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#earn">How To Earn</a>
+    <a href="#contact">Contact</a>
   </div>
+</nav>
 
-  <!-- MAIN -->
-  <div class="main">
+<!-- TICKER -->
 
-    <!-- TOPBAR -->
-    <div class="topbar">
+<div class="ticker">
+  <span>
+    🔥 Brian earned UGX 500,000 • Ali earned Ksh 24,000 • Sarah earned UGX 200,000 • Mike earned UGX 100,000 • Join Mulaprime today 🚀
+  </span>
+</div>
 
-      <input
-        type="text"
-        class="search-box"
-        placeholder="Search here..."
-      >
+<!-- HERO -->
 
-      <div class="topbar-right">
+<section class="hero">
 
-        <i class="fa-solid fa-bell"></i>
+<h1>Earn Money Online With Mulaprime</h1>
 
-        <button class="premium-btn">
-          Premium
-        </button>
+<p>
+Complete simple online tasks, referrals, videos, and start earning daily.
+</p>
 
-      </div>
+<a href="https://mulaprime.space" class="btn">
+Start Earning
+</a>
 
-    </div>
+</section>
 
-    <!-- HERO -->
-    <div class="hero">
+<!-- HOW IT WORKS -->
 
-      <div class="hero-card">
+<section class="section">
 
-        <h1>
-          Africa's Digital Future 🚀
-        </h1>
+<div class="container">
 
-        <p>
-          MulaPrime is Africa’s powerful online earning platform for
-          creators, entrepreneurs, marketers, and digital hustlers.
-        </p>
+<h2>How Mulaprime Works</h2>
 
-        <button class="hero-btn">
-          Start Earning
-        </button>
+<div class="grid">
 
-      </div>
+<div class="card">
+<h3>1. Register</h3>
+<p>Create your account quickly.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>2. Activate</h3>
+<p>Unlock all earning opportunities.</p>
+</div>
 
-    <!-- STATS -->
-    <div class="stats">
+<div class="card">
+<h3>3. Complete Tasks</h3>
+<p>Watch videos, referrals, ads, and social tasks.</p>
+</div>
 
-      <div class="stat-box">
-        <h2>250K+</h2>
-        <p>Members</p>
-      </div>
+<div class="card">
+<h3>4. Withdraw</h3>
+<p>Withdraw your earnings easily.</p>
+</div>
 
-      <div class="stat-box">
-        <h2>$2M+</h2>
-        <p>Total Earnings</p>
-      </div>
+</div>
+</div>
+</section>
 
-      <div class="stat-box">
-        <h2>54</h2>
-        <p>African Countries</p>
-      </div>
+<!-- EARNING METHODS -->
 
-      <div class="stat-box">
-        <h2>24/7</h2>
-        <p>Support</p>
-      </div>
+<section class="section dark" id="earn">
 
-    </div>
+<div class="container">
 
-    <!-- CARDS -->
-    <div class="cards">
+<h2>Ways To Earn</h2>
 
-      <div class="card">
+<div class="grid">
 
-        <div class="card-icon">
-          <i class="fa-brands fa-tiktok"></i>
-        </div>
+<div class="card">
+<h3>🎬 Watch Videos</h3>
+<p>Earn by watching short videos online.</p>
+</div>
 
-        <h3>TikTok Earnings</h3>
+<div class="card">
+<h3>📢 Ads Clicking</h3>
+<p>Click and interact with ads for rewards.</p>
+</div>
 
-        <p>
-          Earn money through viral TikTok promotions,
-          campaigns and influencer marketing.
-        </p>
+<div class="card">
+<h3>💬 Referrals</h3>
+<p>Invite friends and earn commissions.</p>
+</div>
 
-      </div>
+<div class="card">
+<h3>🎁 Daily Bonuses</h3>
+<p>Claim bonuses and rewards daily.</p>
+</div>
 
-      <div class="card">
+</div>
 
-        <div class="card-icon">
-          <i class="fa-brands fa-facebook"></i>
-        </div>
+</div>
 
-        <h3>Meta Ads</h3>
+</section>
 
-        <p>
-          Run profitable Facebook and Instagram ads
-          for businesses and brands.
-        </p>
+<!-- ABOUT -->
 
-      </div>
+<section class="section" id="about">
 
-      <div class="card">
+<div class="container">
 
-        <div class="card-icon">
-          <i class="fa-solid fa-chart-line"></i>
-        </div>
+<h2>About Mulaprime</h2>
 
-        <h3>Forex Lessons</h3>
+<p style="margin-top:20px;font-size:18px;line-height:1.8;">
+Mulaprime is a modern digital earning platform helping users across Africa discover online income opportunities through simple tasks and referrals.
+</p>
 
-        <p>
-          Learn professional forex trading strategies
-          from African experts.
-        </p>
+</div>
 
-      </div>
+</section>
 
-    </div>
+<!-- CONTACT -->
 
-    <!-- FOOTER -->
-    <div class="footer">
-      © 2026 MulaPrime.space | Africa Digital Empire
-    </div>
+<section class="section dark" id="contact">
 
-  </div>
+<div class="container">
+
+<h2>Contact Us</h2>
+
+<p style="margin-top:20px;">
+Email: goldtechmgt@gmail.com
+</p>
+
+<p style="margin-top:10px;">
+WhatsApp: +256775148084
+</p>
+
+<a href="https://wa.me/256775148084" class="btn" style="margin-top:25px;">
+Chat On WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<!-- FLOATING WHATSAPP -->
+
+<a href="https://wa.me/256775148084" class="whatsapp-btn">
+💬 WhatsApp
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Mulaprime</h3>
+
+<p style="margin-top:10px;">
+Earn online through simple daily tasks and referrals.
+</p>
+
+<p style="margin-top:15px;">
+© 2026 Mulaprime. All Rights Reserved.
+</p>
+
+</footer>
 
 </body>
 </html>
