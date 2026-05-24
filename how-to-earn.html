@@ -20,6 +20,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>/* ===== HOW IT WORKS PAGE CSS ===== */
 
+/* ===== HOW IT WORKS PAGE CSS ===== */
+
 body{
   background:#050816;
   color:white;
@@ -86,6 +88,187 @@ body{
 }
 
 /* ===== TOPBAR ===== */
+
+.topbar{
+  background:#081028;
+  padding:20px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.topbar h2{
+  font-size:28px;
+}
+
+.premium-btn{
+  background:#facc15;
+  color:black;
+  border:none;
+  padding:13px 25px;
+  border-radius:15px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.premium-btn:hover{
+  transform:scale(1.05);
+}
+
+/* ===== HERO ===== */
+
+.hero{
+  padding:30px;
+}
+
+.hero-card{
+  background:linear-gradient(135deg,#1e3a8a,#2563eb);
+  padding:50px;
+  border-radius:35px;
+}
+
+.hero-card h1{
+  font-size:48px;
+  margin-bottom:20px;
+  line-height:1.2;
+}
+
+.hero-card p{
+  color:#dbeafe;
+  font-size:17px;
+  line-height:1.9;
+  max-width:750px;
+}
+
+.hero-btn{
+  margin-top:25px;
+  background:#facc15;
+  color:black;
+  border:none;
+  padding:15px 35px;
+  border-radius:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero-btn:hover{
+  transform:scale(1.05);
+}
+
+/* ===== CARDS ===== */
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+  padding:0 30px 40px;
+}
+
+.card{
+  background:#0b1120;
+  border-radius:28px;
+  padding:35px;
+  border:1px solid rgba(255,255,255,0.05);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  border-color:#3b82f6;
+}
+
+.card-icon{
+  width:70px;
+  height:70px;
+  background:rgba(250,204,21,0.1);
+  color:#facc15;
+  border-radius:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  margin-bottom:20px;
+}
+
+.card h3{
+  font-size:25px;
+  margin-bottom:15px;
+}
+
+.card p{
+  color:#94a3b8;
+  line-height:1.8;
+  font-size:15px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+  text-align:center;
+  padding:25px;
+  color:#94a3b8;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:768px){
+
+  .sidebar{
+    width:90px;
+    padding:15px 10px;
+  }
+
+  .logo{
+    font-size:18px;
+  }
+
+  .sidebar-menu a{
+    font-size:0;
+    justify-content:center;
+    padding:15px;
+  }
+
+  .sidebar-menu a i{
+    font-size:20px;
+  }
+
+  .main{
+    margin-left:90px;
+    width:calc(100% - 90px);
+  }
+
+  .topbar{
+    padding:15px;
+  }
+
+  .topbar h2{
+    font-size:20px;
+  }
+
+  .hero{
+    padding:20px;
+  }
+
+  .hero-card{
+    padding:25px;
+  }
+
+  .hero-card h1{
+    font-size:32px;
+  }
+
+  .hero-card p{
+    font-size:15px;
+  }
+
+  .cards{
+    padding:20px;
+  }
+
+}
 
 .topbar{
   background:#081028;
@@ -448,120 +631,6 @@ body{
   margin-bottom:30px;
 }
 
-.logo span{
-  color:#facc15;
-}
-
-.sidebar-menu{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.sidebar-menu a{
-  text-decoration:none;
-  color:#cbd5e1;
-  padding:15px;
-  border-radius:15px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  transition:0.3s;
-  font-size:16px;
-}
-
-.sidebar-menu a:hover{
-  background:#1d4ed8;
-  transform:translateX(5px);
-}
-
-.sidebar-menu a.active{
-  background:#2563eb;
-  color:white;
-}
-
-/* ===== MAIN ===== */
-
-.main{
-  margin-left:250px;
-  width:calc(100% - 250px);
-}
-
-/* ===== TOPBAR ===== */
-
-.topbar{
-  background:#081028;
-  padding:20px 30px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.topbar h2{
-  font-size:28px;
-}
-
-.premium-btn{
-  background:#facc15;
-  color:black;
-  border:none;
-  padding:13px 25px;
-  border-radius:15px;
-  font-weight:700;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.premium-btn:hover{
-  transform:scale(1.05);
-}
-
-/* ===== HERO ===== */
-
-.hero{
-  padding:30px;
-}
-
-.hero-card{
-  background:linear-gradient(135deg,#1e3a8a,#2563eb);
-  padding:50px;
-  border-radius:35px;
-}
-
-.hero-card h1{
-  font-size:48px;
-  margin-bottom:20px;
-  line-height:1.2;
-}
-
-.hero-card p{
-  color:#dbeafe;
-  font-size:17px;
-  line-height:1.9;
-  max-width:750px;
-}
-
-.hero-btn{
-  margin-top:25px;
-  background:#facc15;
-  color:black;
-  border:none;
-  padding:15px 35px;
-  border-radius:16px;
-  font-weight:700;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.hero-btn:hover{
-  transform:scale(1.05);
-}
-
-/* ===== CARDS ===== */
-
-.cards{
-  padding:20px;
-  }
 
 
   </style>
