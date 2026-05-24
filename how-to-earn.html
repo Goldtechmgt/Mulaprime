@@ -395,7 +395,7 @@ body{
 
 /* ===== MOBILE ===== */
 
-@media(max-width:768px){
+@meia(max-width:768px){
 
   .sidebar{
     width:90px;
@@ -448,191 +448,113 @@ body{
   .cards{
     padding:20px;
   }
+/* ===== MOBILE FIX ===== */
 
-}/* ===== HOW IT WORKS PAGE CSS ===== */
+@media(max-width:768px){
 
-body{
-  background:#050816;
-  color:white;
-  font-family:'Poppins',sans-serif;
-  margin:0;
-  overflow-x:hidden;
-}
-
-/* ===== SIDEBAR ===== */
-
-.sidebar{
-  width:250px;
-  height:100vh;
-  background:#07133a;
-  position:fixed;
-  left:0;
-  top:0;
-  padding:20px;
-}
-
-.logo{
-  font-size:32px;
-  font-weight:800;
-  margin-bottom:30px;
-}
-
-.logo span{
-  color:#facc15;
-}
-
-.sidebar-menu{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-.sidebar-menu a{
-  text-decoration:none;
-  color:#cbd5e1;
-  padding:15px;
-  border-radius:15px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  transition:0.3s;
-  font-size:16px;
-}
-
-.sidebar-menu a:hover{
-  background:#1d4ed8;
-  transform:translateX(5px);
-}
-
-.sidebar-menu a.active{
-  background:#2563eb;
-  color:white;
-}
-
-/* ===== MAIN ===== */
-
-.main{
-  margin-left:250px;
-  width:calc(100% - 250px);
-}
-
-/* ===== TOPBAR ===== */
-
-.topbar{
-  background:#081028;
-  padding:20px 30px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.topbar h2{
-  font-size:28px;
-}
-
-.premium-btn{
-  background:#facc15;
-  color:black;
-  border:none;
-  padding:13px 25px;
-  border-radius:15px;
-  font-weight:700;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.premium-btn:hover{
-  transform:scale(1.05);
-}
-
-/* ===== HERO ===== */
-
-.hero{
-  padding:30px;
-}
-
-.hero-card{
-  background:linear-gradient(135deg,#1e3a8a,#2563eb);
-  padding:50px;
-  border-radius:35px;
-}
-
-.hero-card h1{
-  font-size:48px;
-  margin-bottom:20px;
-  line-height:1.2;
-}
-
-.hero-card p{
-  color:#dbeafe;
-  font-size:17px;
-  line-height:1.9;
-  max-width:750px;
-}
-
-.hero-btn{
-  margin-top:25px;
-  background:#facc15;
-  color:black;
-  border:none;
-  padding:15px 35px;
-  border-radius:16px;
-  font-weight:700;
-  cursor:pointer;
-  transition:0.3s;
-}
-
-.hero-btn:hover{
-  transform:scale(1.05);
-}
-
-/* ===== CARDS ===== */
-
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:25px;
-  padding:0 30px 40px;
-}
-
-.card{
-  background:#0b1120;
-  border-radius:28px;
-  padding:35px;
-  border:1px solid rgba(255,255,255,0.05);
-    padding:20px;
+  /* SIDEBAR */
+  .sidebar{
+    width:70px;
+    padding:12px 8px;
+    overflow:hidden;
   }
 
-    }/* ===== HOW IT WORKS PAGE CSS ===== */
+  .logo{
+    font-size:0;
+    text-align:center;
+  }
 
-body{
-  background:#050816;
-  color:white;
-  font-family:'Poppins',sans-serif;
-  margin:0;
-  overflow-x:hidden;
+  .logo::after{
+    content:"MP";
+    font-size:22px;
+    font-weight:800;
+    color:#facc15;
+  }
+
+  .sidebar-menu{
+    gap:8px;
+  }
+
+  .sidebar-menu a{
+    justify-content:center;
+    padding:14px 10px;
+    font-size:0;
+    border-radius:14px;
+  }
+
+  .sidebar-menu a span{
+    font-size:0;
+  }
+
+  .sidebar-menu a i{
+    font-size:22px;
+    color:white;
+  }
+
+  /* MAIN CONTENT */
+  .main{
+    margin-left:70px;
+    width:calc(100% - 70px);
+  }
+
+  /* TOPBAR */
+  .topbar{
+    padding:15px;
+    gap:10px;
+  }
+
+  .topbar h2{
+    font-size:22px;
+    line-height:1.3;
+  }
+
+  .premium-btn{
+    padding:10px 16px;
+    font-size:14px;
+  }
+
+  /* HERO */
+  .hero{
+    padding:15px;
+  }
+
+  .hero-card{
+    padding:25px 20px;
+    border-radius:25px;
+  }
+
+  .hero-card h1{
+    font-size:34px;
+    line-height:1.2;
+    word-break:break-word;
+  }
+
+  .hero-card p{
+    font-size:16px;
+    line-height:1.8;
+    word-break:break-word;
+  }
+
+  /* CARDS */
+  .cards{
+    grid-template-columns:1fr;
+    padding:15px;
+  }
+
+  .card{
+    padding:25px;
+  }
+
+  .card h3{
+    font-size:22px;
+  }
+
+  .card p{
+    font-size:15px;
+    line-height:1.7;
+  }
+
 }
-
-/* ===== SIDEBAR ===== */
-
-.sidebar{
-  width:250px;
-  height:100vh;
-  background:#07133a;
-  position:fixed;
-  left:0;
-  top:0;
-  padding:20px;
-}
-
-.logo{
-  font-size:32px;
-  font-weight:800;
-  margin-bottom:30px;
-}
-
-
-
   </style>
 </head>
 
